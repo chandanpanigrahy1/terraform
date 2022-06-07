@@ -1,4 +1,4 @@
-resource "aws_config_aggregate_authorization" "ak" {
+resource {
   account_id = "218009773641"
   region     = "ap-south-1"
 }
@@ -21,5 +21,5 @@ resource "aws_instance" "ec2" {
   subnet_id     = "subnet-0119d1f6bda0698fa"
   tags = {
     Name = "HelloWorld"
-  }
+    }
 }
