@@ -1,4 +1,4 @@
-resource {
+resource "aws_config_aggregate_authorization" "chandan"{
   account_id = "218009773641"
   region     = "ap-south-1"
 }
