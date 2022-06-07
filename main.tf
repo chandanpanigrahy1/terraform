@@ -15,10 +15,9 @@ provider "aws" {
   access_key = "AKIATFQTFEZE6VKZUC7R"
   secret_key = "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"
 }
-resource "aws_instance" "sidharth" {
+resource "aws_instance" "ec2-instance" {
   ami           = "ami-079b5e5b3971bd10d"
   instance_type = "t2.micro"
-  subnet_id     = "subnet-0119d1f6bda0698fa"
   tags = {
     Name = "HelloWorld"
     }
